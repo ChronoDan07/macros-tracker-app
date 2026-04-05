@@ -1,14 +1,15 @@
 import { Component, signal } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from './components/header/header';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, HeaderComponent],
+  imports: [LandingPageComponent],
   template: `
-    <app-header />
     <main>
-      <router-outlet />
+      <app-landing-page />
     </main>
   `,
   styles: [],
