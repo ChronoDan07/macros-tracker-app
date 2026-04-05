@@ -12,6 +12,9 @@
         "@schematics/angular:component": {
           "style": "scss",
           "type": "component"
+        },
+        "@schematics/angular:service": {
+          "type": "Service"
         }
       },
       "root": "",
@@ -30,9 +33,7 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.scss"
-            ]
+            "styles": ["src/styles.scss"]
           },
           "configurations": {
             "production": {
