@@ -12,6 +12,5 @@ export class FoodService {
   addFood(food: Food) {
     const current = this.foods.value;
     this.foods.next([...current, food]);
-    console.log(this.foods.value)
   }
 }

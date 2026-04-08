@@ -24,7 +24,7 @@ export class FoodTableComponent implements OnInit {
     });
   }
 
-  addFoodSummary(food: Food) {
-    this.dailySummaryService.addFood(food);
+  addFoodSummary(food: Food, value: string) {
+    this.dailySummaryService.addFood(food, value);
   }
 }

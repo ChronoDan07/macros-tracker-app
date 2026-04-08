@@ -1,4 +1,4 @@
-<h2>Food's Table</h2>
+<h2>Foods Table</h2>
 <table>
   <thead>
     <tr>
@@ -21,10 +21,10 @@
         <td>{{food.fats}}</td>
         <td>{{food.calories}}</td>
         <td>
-          <input type="number" value="1">
+          <input type="number" value="1" #userInput>
         </td>
         <td>
-          <button (click)="addFoodSummary(food)">+</button>
+          <button (click)="addFoodSummary(food, userInput.value)">+</button>
         </td>
       </tr>
     }
