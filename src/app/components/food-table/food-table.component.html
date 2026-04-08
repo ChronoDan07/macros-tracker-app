@@ -1,12 +1,14 @@
+<h2>Food's Table</h2>
 <table>
   <thead>
     <tr>
       <th>Name</th>
       <th>Unit</th>
-      <th>Calories</th>
       <th>Protein</th>
       <th>Carbs</th>
       <th>Fats</th>
+      <th>Calories</th>
+      <th>Quantity</th>
     </tr>
   </thead>
   <tbody>
@@ -14,20 +16,17 @@
       <tr>
         <td>{{food.name}}</td>
         <td>{{food.units}}</td>
-        <td>{{food.calories}}</td>
         <td>{{food.proteins}}</td>
         <td>{{food.carbs}}</td>
         <td>{{food.fats}}</td>
+        <td>{{food.calories}}</td>
+        <td>
+          <input type="number" value="1">
+        </td>
+        <td>
+          <button (click)="addFoodSummary(food)">+</button>
+        </td>
       </tr>
     }
-    <tr>
-      <td>Total</td>
-      <td>-</td>
-      <td>-</td>
-      <td>123</td>
-      <td>55</td>
-      <td>12</td>
-      <td>99</td>
-    </tr>
   </tbody>
 </table>

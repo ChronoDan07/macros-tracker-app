@@ -1,1 +1,35 @@
-<p>daily-summary works!</p>
+<h2>Today Summary</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Unit</th>
+      <th>Protein</th>
+      <th>Carbs</th>
+      <th>Fats</th>
+      <th>Calories</th>
+      <th>Quantity</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (food of summaryFoods; track food) {
+      <tr>
+        <td>{{ food.name }}</td>
+        <td>{{ food.units }}</td>
+        <td>{{ food.proteins }}</td>
+        <td>{{ food.carbs }}</td>
+        <td>{{ food.fats }}</td>
+        <td>{{ food.calories }}</td>
+      </tr>
+    }
+    <tr>
+      <td>Total</td>
+      <td>-</td>
+      <td>-</td>
+      <td>123</td>
+      <td>55</td>
+      <td>12</td>
+      <td>99</td>
+    </tr>
+  </tbody>
+</table>
