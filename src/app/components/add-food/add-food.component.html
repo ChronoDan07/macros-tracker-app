@@ -1,16 +1,28 @@
 <button>Add Food</button>
-<form action="">
-  <label for="">Food Name:</label>
-  <input type="text">
-  <label for="">Units:</label>
-  <input type="text">
-  <label for="">Calories:</label>
-  <input type="text">
-  <label for="">Proteins:</label>
-  <input type="text">
-  <label for="">Carbs:</label>
-  <input type="text">
-  <label for="">Fats:</label>
-  <input type="text">
-  <input type="submit">
+
+<form [formGroup]="foodForm" (ngSubmit)="onSubmit()">
+
+  <label>Food Name:</label>
+  <input type="text" formControlName="name">
+
+  <label>Units:</label>
+  <select formControlName="units">
+    <option value="grams">Grams</option>
+    <option value="piece">Piece</option>
+    <option value="serving">Serving</option>
+  </select>
+
+  <label>Calories:</label>
+  <input type="number" formControlName="calories">
+
+  <label>Proteins:</label>
+  <input type="number" formControlName="proteins">
+
+  <label>Carbs:</label>
+  <input type="number" formControlName="carbs">
+
+  <label>Fats:</label>
+  <input type="number" formControlName="fats">
+
+  <button type="submit">Add Food</button>
 </form>

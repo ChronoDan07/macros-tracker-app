@@ -2,7 +2,7 @@
   <thead>
     <tr>
       <th>Name</th>
-      <th>Serving</th>
+      <th>Unit</th>
       <th>Calories</th>
       <th>Protein</th>
       <th>Carbs</th>
@@ -10,13 +10,24 @@
     </tr>
   </thead>
   <tbody>
+    @for (food of foods; track food) {
+      <tr>
+        <td>{{food.name}}</td>
+        <td>{{food.units}}</td>
+        <td>{{food.calories}}</td>
+        <td>{{food.proteins}}</td>
+        <td>{{food.carbs}}</td>
+        <td>{{food.fats}}</td>
+      </tr>
+    }
     <tr>
-      <td>Chicken Breast</td>
-      <td>1</td>
-      <td>170</td>
-      <td>23</td>
-      <td>3</td>
-      <td>5</td>
+      <td>Total</td>
+      <td>-</td>
+      <td>-</td>
+      <td>123</td>
+      <td>55</td>
+      <td>12</td>
+      <td>99</td>
     </tr>
   </tbody>
 </table>
