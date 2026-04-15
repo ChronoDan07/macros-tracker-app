@@ -12,7 +12,7 @@
     </tr>
   </thead>
   <tbody>
-    @for (food of summaryFoods; track food) {
+    @for (food of summaryFoods(); track food) {
       <tr>
         <td>{{ food.name }}</td>
         <td>{{ food.units }}</td>
@@ -26,11 +26,11 @@
     <tr>
       <td>Total</td>
       <td>-</td>
+      <td>{{ totalProteins()}}</td>
+      <td>{{ totalCarbs()}}</td>
+      <td>{{ totalFats()}}</td>
+      <td>{{ totalCalories()}}</td>
       <td>-</td>
-      <td>123</td>
-      <td>55</td>
-      <td>12</td>
-      <td>99</td>
     </tr>
   </tbody>
 </table>
