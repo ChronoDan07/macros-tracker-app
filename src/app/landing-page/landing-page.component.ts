@@ -6,11 +6,12 @@ import { FoodTableComponent } from '../components/food-table/food-table.componen
 import { DailySummaryComponent } from '../components/daily-summary/daily-summary.component';
 import { HeaderComponent } from '../components/landing-page/header/header.component';
 import { DailyCaloriesCardComponent } from '../components/daily-calories-card/daily-calories-card.component';
+import { MacrosBreakdownCardComponent } from '../components/macros-breakdown-card/macros-breakdown-card.component';
 
 
 @Component({
   selector: 'app-landing-page',
-  imports: [CaloriesGoalComponent, CaloriesStatsComponent, AddFoodComponent, FoodTableComponent, DailySummaryComponent, HeaderComponent, DailyCaloriesCardComponent],
+  imports: [CaloriesGoalComponent, CaloriesStatsComponent, AddFoodComponent, FoodTableComponent, DailySummaryComponent, HeaderComponent, DailyCaloriesCardComponent, MacrosBreakdownCardComponent],
   templateUrl: './landing-page.component.html',
   styleUrl: './landing-page.component.scss',
 })
