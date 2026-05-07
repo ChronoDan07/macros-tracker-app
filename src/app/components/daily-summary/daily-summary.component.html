@@ -1,36 +1,50 @@
-<h2>Today Summary</h2>
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Unit</th>
-      <th>Protein</th>
-      <th>Carbs</th>
-      <th>Fats</th>
-      <th>Calories</th>
-      <th>Quantity</th>
-    </tr>
-  </thead>
-  <tbody>
-    @for (food of summaryFoods(); track food) {
+<section>
+  <h2>Today Summary</h2>
+  <div class="food-items-container">
+    <div class="food-item-row">
+      <div class="left-side">
+        <div class="icon"></div>
+        <div>
+          <h4>Food Name</h4>
+          <p>Food type & time</p>
+        </div>
+      </div>
+      <div class="rigt-side"></div>
+    </div>
+  </div>
+  <!-- <table>
+    <thead>
       <tr>
-        <td>{{ food.name }}</td>
-        <td>{{ food.units }}</td>
-        <td>{{ food.totalProteins }}</td>
-        <td>{{ food.totalCarbs }}</td>
-        <td>{{ food.totalFats }}</td>
-        <td>{{ food.totalCalories }}</td>
-        <td>{{ food.quantity }}</td>
+        <th>Name</th>
+        <th>Unit</th>
+        <th>Protein</th>
+        <th>Carbs</th>
+        <th>Fats</th>
+        <th>Calories</th>
+        <th>Quantity</th>
       </tr>
-    }
-    <tr>
-      <td>Total</td>
-      <td>-</td>
-      <td>{{ totalProteins()}}</td>
-      <td>{{ totalCarbs()}}</td>
-      <td>{{ totalFats()}}</td>
-      <td>{{ totalCalories()}}</td>
-      <td>-</td>
-    </tr>
-  </tbody>
-</table>
+    </thead>
+    <tbody>
+      @for (food of summaryFoods(); track food) {
+        <tr>
+          <td>{{ food.name }}</td>
+          <td>{{ food.units }}</td>
+          <td>{{ food.totalProteins }}</td>
+          <td>{{ food.totalCarbs }}</td>
+          <td>{{ food.totalFats }}</td>
+          <td>{{ food.totalCalories }}</td>
+          <td>{{ food.quantity }}</td>
+        </tr>
+      }
+      <tr>
+        <td>Total</td>
+        <td>-</td>
+        <td>{{ totalProteins()}}</td>
+        <td>{{ totalCarbs()}}</td>
+        <td>{{ totalFats()}}</td>
+        <td>{{ totalCalories()}}</td>
+        <td>-</td>
+      </tr>
+    </tbody>
+  </table> -->
+</section>

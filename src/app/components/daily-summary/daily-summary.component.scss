@@ -1,0 +1,18 @@
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+h2 {
+  font-family: "Manrope",Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #2C3435;
+}
+
+.food-item-row {
+  background-color: #F1F4F4;
+  padding: 24px;
+  border-radius: 24px;
+}
